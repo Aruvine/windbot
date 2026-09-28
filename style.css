@@ -201,6 +201,17 @@ nav {
   color: var(--text);
 }
 
+/* Sub-headings inside a long section, such as the Premium and refund terms,
+   which are too long to read as one list. */
+.section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.section h3:first-of-type { margin-top: 1rem; }
+
 .section p,
 .section li {
   color: var(--text-muted);
@@ -286,6 +297,7 @@ nav {
 
 .tag.green { background: rgba(34,197,94,0.15); color: #4ade80; }
 .tag.purple { background: rgba(124,92,252,0.15); color: var(--accent2); }
+.tag.amber { background: rgba(245,158,11,0.15); color: #fbbf24; }
 
 /* ── Contact card ── */
 .contact-card {
@@ -332,6 +344,14 @@ footer {
 
 footer a { color: var(--accent2); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
+
+/* Discord asks that this be visible wherever the bot is presented, so it sits
+   in the footer of every page as well as in the terms. */
+.footer-disclaimer {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  opacity: 0.7;
+}
 
 /* ── Home page cards ── */
 .cards {
